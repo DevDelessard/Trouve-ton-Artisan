@@ -1,0 +1,219 @@
+[
+    {
+      "id": 1,
+      "name": "Jean Dupont",
+      "rating": 4.5,
+      "specialty": "Maçon",
+      "location": "Lyon",
+      "category": "Bâtiment",
+      "image": "https://ui-avatars.com/api/?name=Jean+Dupont&background=0D8ABC&color=fff"
+    },
+    {
+      "id": 2,
+      "name": "Paul Martin",
+      "rating": 4.2,
+      "specialty": "Plombier",
+      "location": "Moutiers",
+      "category": "Bâtiment",
+      "image": "https://ui-avatars.com/api/?name=Paul+Martin&background=0D8ABC&color=fff"
+    },
+    {
+      "id": 3,
+      "name": "Sophie Bernard",
+      "rating": 4.8,
+      "specialty": "Électricien",
+      "location": "Tarare",
+      "category": "Bâtiment",
+      "image": "https://ui-avatars.com/api/?name=Sophie+Bernard&background=0D8ABC&color=fff"
+    },
+    {
+      "id": 4,
+      "name": "Michel Girard",
+      "rating": 4.0,
+      "specialty": "Peintre",
+      "location": "Venissieux",
+      "category": "Bâtiment",
+      "image": "https://ui-avatars.com/api/?name=Michel+Girard&background=0D8ABC&color=fff"
+    },
+    {
+      "id": 5,
+      "name": "Nathalie Dupuis",
+      "rating": 4.6,
+      "specialty": "Carreleur",
+      "location": "Meylan",
+      "category": "Bâtiment",
+      "image": "https://ui-avatars.com/api/?name=Nathalie+Dupuis&background=0D8ABC&color=fff"
+    },
+    {
+      "id": 6,
+      "name": "François Leroy",
+      "rating": 4.4,
+      "specialty": "Charpentier",
+      "location": "Voreppe",
+      "category": "Bâtiment",
+      "image": "https://ui-avatars.com/api/?name=Fran%C3%A7ois+Leroy&background=0D8ABC&color=fff"
+    },
+    {
+      "id": 7,
+      "name": "Alice Durand",
+      "rating": 4.7,
+      "specialty": "Serrurier",
+      "location": "Bourgoin-Jallieu",
+      "category": "Services",
+      "image": "https://ui-avatars.com/api/?name=Alice+Durand&background=0D8ABC&color=fff"
+    },
+    {
+      "id": 8,
+      "name": "Bernard Petit",
+      "rating": 4.3,
+      "specialty": "Réparateur d'instruments de musique",
+      "location": "Lyon",
+      "category": "Services",
+      "image": "https://ui-avatars.com/api/?name=Bernard+Petit&background=0D8ABC&color=fff"
+    },
+    {
+      "id": 9,
+      "name": "Caroline Moreau",
+      "rating": 4.9,
+      "specialty": "Dépanneur",
+      "location": "Villefranche-sur-Saône",
+      "category": "Services",
+      "image": "https://ui-avatars.com/api/?name=Caroline+Moreau&background=0D8ABC&color=fff"
+    },
+    {
+      "id": 10,
+      "name": "Denis Fabre",
+      "rating": 4.2,
+      "specialty": "Réparateur electroménager",
+      "location": "Bourg-en-Bresse",
+      "category": "Services",
+      "image": "https://ui-avatars.com/api/?name=Denis+Fabre&background=0D8ABC&color=fff"
+    },
+    {
+      "id": 11,
+      "name": "Émilie Laurent",
+      "rating": 4.5,
+      "specialty": "Assistance troisième âge",
+      "location": "Villeurbanne",
+      "category": "Services",
+      "image": "https://ui-avatars.com/api/?name=%C3%89milie+Laurent&background=0D8ABC&color=fff"
+    },
+    {
+      "id": 12,
+      "name": "Georges Robin",
+      "rating": 4.1,
+      "specialty": "Cordiste",
+      "location": "Grenoble",
+      "category": "Services",
+      "image": "https://ui-avatars.com/api/?name=Georges+Robin&background=0D8ABC&color=fff"
+    },
+    {
+      "id": 13,
+      "name": "Hélène Dubois",
+      "rating": 4.8,
+      "specialty": "Menuisier",
+      "location": "Roanne",
+      "category": "Fabrication",
+      "image": "https://ui-avatars.com/api/?name=H%C3%A9l%C3%A8ne+Dubois&background=0D8ABC&color=fff"
+    },
+    {
+      "id": 14,
+      "name": "Isabelle Moulin",
+      "rating": 4.6,
+      "specialty": "Ferronnier",
+      "location": "Thiers",
+      "category": "Fabrication",
+      "image": "https://ui-avatars.com/api/?name=Isabelle+Moulin&background=0D8ABC&color=fff"
+    },
+    {
+      "id": 15,
+      "name": "Jacques Fontaine",
+      "rating": 4.3,
+      "specialty": "Ebéniste",
+      "location": "Albertville",
+      "category": "Fabrication",
+      "image": "https://ui-avatars.com/api/?name=Jacques+Fontaine&background=0D8ABC&color=fff"
+    },
+    {
+      "id": 16,
+      "name": "Kévin Lefevre",
+      "rating": 4.7,
+      "specialty": "Sculpteur",
+      "location": "Vichy",
+      "category": "Fabrication",
+      "image": "https://ui-avatars.com/api/?name=K%C3%A9vin+Lefevre&background=0D8ABC&color=fff"
+    },
+    {
+      "id": 17,
+      "name": "Lucie Roche",
+      "rating": 4.2,
+      "specialty": "Tailleur de pierre",
+      "location": "Montluçon",
+      "category": "Fabrication",
+      "image": "https://ui-avatars.com/api/?name=Lucie+Roche&background=0D8ABC&color=fff"
+    },
+    {
+      "id": 18,
+      "name": "Marc Guillot",
+      "rating": 4.4,
+      "specialty": "Orfèvre",
+      "location": "Lyon",
+      "category": "Fabrication",
+      "image": "https://ui-avatars.com/api/?name=Marc+Guillot&background=0D8ABC&color=fff"
+    },
+    {
+      "id": 19,
+      "name": "Nadine Faure",
+      "rating": 4.9,
+      "specialty": "Boulanger",
+      "location": "La-tour-du-Pin",
+      "category": "Alimentation",
+      "image": "https://ui-avatars.com/api/?name=Nadine+Faure&background=0D8ABC&color=fff"
+    },
+    {
+      "id": 20,
+      "name": "Olivier Thomas",
+      "rating": 4.6,
+      "specialty": "Pâtissier",
+      "location": "Aix-les-bains",
+      "category": "Alimentation",
+      "image": "https://ui-avatars.com/api/?name=Olivier+Thomas&background=0D8ABC&color=fff"
+    },
+    {
+      "id": 21,
+      "name": "Pascal Reynaud",
+      "rating": 4.3,
+      "specialty": "Charcutier",
+      "location": "Annecy",
+      "category": "Alimentation",
+      "image": "https://ui-avatars.com/api/?name=Pascal+Reynaud&background=0D8ABC&color=fff"
+    },
+    {
+      "id": 22,
+      "name": "Quentin Roux",
+      "rating": 4.7,
+      "specialty": "Poissonnier",
+      "location": "Chambéry",
+      "category": "Alimentation",
+      "image": "https://ui-avatars.com/api/?name=Quentin+Roux&background=0D8ABC&color=fff"
+    },
+    {
+      "id": 23,
+      "name": "Rachel Maillard",
+      "rating": 4.5,
+      "specialty": "Épicier",
+      "location": "Valence",
+      "category": "Alimentation",
+      "image": "https://ui-avatars.com/api/?name=Rachel+Maillard&background=0D8ABC&color=fff"
+    },
+    {
+      "id": 24,
+      "name": "Samuel Martin",
+      "rating": 4.2,
+      "specialty": "Fromager",
+      "location": "Clermont-ferrand",
+      "category": "Alimentation",
+      "image": "https://ui-avatars.com/api/?name=Samuel+Martin&background=0D8ABC&color=fff"
+    }
+  ]
+  

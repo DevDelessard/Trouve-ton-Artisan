@@ -1,0 +1,612 @@
+@import '~bootstrap/scss/bootstrap';
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f1f8fc;
+    color: #384050;
+}
+
+h1 {
+    color: #00497c;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+
+.main-content.menu-open {
+    margin-top: 150px; // Ajustez cette valeur en fonction de la hauteur du menu ouvert
+}
+
+/* Mobile-first styles */
+.artisan-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.arti {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.artisan-card {
+    width: 100%;
+    max-width: 250px;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    text-align: center;
+    min-height: 373px;
+    justify-content: center;
+    &:hover {
+    transform: scale(1.05);
+    }
+    
+    .artisan-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    }
+    }
+
+.how-to {
+    margin-left: 9%;
+    align-items: auto;
+    justify-content: auto;
+    
+    h2 {
+        margin-top: 40px;
+        margin-bottom: 30px;
+        font-size: 1.5rem;
+        justify-content: center;
+    }
+
+    ol {
+        padding-left: 20px;
+        li {
+            margin: 15px 0;
+            font-size: 1rem;
+        }
+        margin-bottom: 50px;
+    }
+}
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    color: #00497c; /* Couleur du texte */
+    max-height: 100px;
+    
+
+    .logo a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    }
+
+    .logo img {
+    width: 350px; /* Ajuste la taille du logo */
+    height: auto;
+    }
+
+    .burger-menu {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: #00497c;
+        cursor: pointer;
+    
+        &:focus {
+            outline: none;
+        }
+    }
+    /* Cacher le menu de navigation sur mobile */
+    .nav-menu {
+        display: none; // Masqué par défaut
+        opacity: 0; // Début de l'opacité à 0 pour l'effet de transition
+        transform: translateY(-20px); // Légèrement déplacé vers le haut
+        transition: opacity 0.3s ease, transform 0.3s ease; // Transition pour l'opacité et la position, délai pour la visibilité
+      
+        &.mobile-active {
+
+          display: flex;
+          opacity: 1;
+          transform: translateY(0); // Revient à la position normale
+        transition: opacity 0.3s ease, transform 0.3s ease; // Transition sans délai
+          flex-direction: column;
+          position: absolute;
+          top: 60px;
+          left: 0;
+          width: 100%;
+          background-color: rgba(0, 116, 199, 0.7); // Fond semi-transparent
+          padding: 10px 0;
+          margin-top: 40px;
+          z-index: 1000;
+          
+          a {
+            padding: 10px;
+            color: rgb(255, 255, 255); // Le texte reste opaque
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+      
+            &:hover {
+              background-color: #00497c; // Couleur de fond au survol, non transparente
+            }
+          }
+        }
+      }
+      
+      
+    
+      /* Search form */
+      .search-form {
+        display: flex;
+        align-items: center;
+        position: relative;
+        
+        input.search-input {
+            padding: 8px 15px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            outline: none;
+            font-size: 1rem;
+            width: 100%; /* Pour occuper toute la largeur disponible */
+            padding-right: 40px; /* Espace pour la loupe */
+            transition: box-shadow 0.3s ease;
+    
+            &:focus {
+                box-shadow: 0px 0px 8px rgba(0, 116, 199, 0.5);
+            }
+        }
+    
+        button.search-button {
+            position: absolute;
+            right: 10px; /* Ajuste cette valeur pour bien placer l'icône */
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+            color: #0074c7; /* Ajuste la couleur selon le design souhaité */
+            
+            &:hover {
+                color: #00497c; /* Change la couleur au survol */
+            }
+        }
+    }
+
+    }
+
+/* Section contenant la note, la spécialité et la localisation */
+.main-content {
+    display: flex;
+    flex-direction: column; /* Aligner les éléments verticalement */
+    align-items: center; /* Centrer horizontalement */
+    text-align: center; /* Centrer le texte */
+    margin-top: 20px; /* Ajouter un peu d'espace au-dessus */
+    gap: 10px; /* Espacement entre chaque ligne */
+  }
+  
+    form {
+        display: flex;
+        flex-direction: column; /* Disposer les champs en colonne */
+        gap: 15px; /* Espacement entre les groupes de champs */
+        max-width: 400px; /* Largeur maximale du formulaire */
+        margin: 0 auto; /* Centrer le formulaire */
+        margin-bottom: 50px;
+      }
+      
+      form div {
+        display: flex;
+        flex-direction: row; /* Placer label et champ côte à côte */
+        align-items: center; /* Aligner verticalement */
+        justify-content: space-between; /* Espacement entre label et champ */
+        gap: 10px; /* Espace entre le label et le champ */
+      }
+      
+      form label {
+        width: 100px; /* Largeur fixe pour aligner les labels */
+        text-align: left; /* Alignement du texte du label */
+        font-weight: bold; /* Optionnel : Mettre en gras */
+        color: #00497c; /* Couleur personnalisée */
+      }
+      
+      form input,
+      form textarea {
+        flex: 1; /* Champs prennent tout l’espace restant */
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+      }
+
+
+
+/* Tablette */
+@media (min-width: 540px) and (max-width: 1000px){
+
+    .artisan-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .how-to {
+        min-width: 600px;
+        margin: 50px auto;
+        margin: 0 100px; /* Grandes marges latérales pour centrer */
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        .arti {
+            padding-top: 40px;
+            padding-bottom: 20px;
+            margin: 0 300px; /* Grandes marges latérales pour centrer */
+        }
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        background-color: #ffffff;
+        max-height: 150px;
+        min-height: 150px;
+    
+        .logo {
+            display: flex;
+          margin-top: -50px;
+          align-self: left;
+          order: 1;
+        }
+    
+        .search-form {
+          order: 1; /* Met la barre de recherche en haut */
+          align-self: right;
+          position: relative;
+          justify-content: start;
+          max-width: 300px;
+          margin-top:  -135px;
+          margin-left: 400px;
+          
+        }
+    
+        .nav-menu {
+          order: 2; /* Met les boutons de navigation en bas */
+          display: flex;
+          justify-content: center;
+          gap: 15px;
+          margin-bottom: -40px;
+          visibility: visible;
+          opacity: 1; // Assurez-vous que l'opacité est bien à 1
+        }
+
+        .nav-button {
+            
+            color: #00497c;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+          
+            &:hover {
+                text-decoration: underline;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Ombre légère
+            }
+          
+            &:focus {
+              outline: none;
+            }
+          }
+    
+        .burger-menu {
+          display: none;
+        }
+      }
+    
+}
+
+
+
+
+
+
+
+
+
+/* Tablette */
+@media (min-width: 1000px) and (max-width: 1024px){
+
+    .artisan-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .how-to {
+        min-width: 600px;
+        margin: 50px auto;
+        margin: 0 100px; /* Grandes marges latérales pour centrer */
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        .arti {
+            padding-top: 40px;
+            padding-bottom: 20px;
+            margin: 0 300px; /* Grandes marges latérales pour centrer */
+        }
+    }
+
+    header {
+        display: flex;
+        opacity: 1;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0px;
+        background-color: white; /* Fond blanc pour un style épuré */
+        color: white;
+        max-height: 100px;
+        .logo a {
+        display: flex;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+        }
+        .logo img {
+        width: 350px; /* Ajuste la taille du logo */
+        height: auto;
+        }
+        .burger-menu {
+            display: none;
+        }
+        .nav-menu {
+        display: flex;
+        gap: 15px;
+        opacity: 1;
+        }
+        .nav-button {
+            background-color: white; // Bleu foncé similaire au site de la région
+            color: #00497c;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            opacity: 1;
+            margin-bottom: -50px;
+            
+          
+            &:hover {
+                text-decoration: underline;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Ombre légère
+            }
+          
+            &:focus {
+              outline: none;
+            }
+          }
+          .search-form {
+            display: flex;
+            align-items: center;
+            position: relative;
+            
+            input.search-input {
+                padding: 8px 15px;
+                border: 1px solid #ccc;
+                border-radius: 20px;
+                outline: none;
+                font-size: 1rem;
+                width: 100%; /* Pour occuper toute la largeur disponible */
+                padding-right: 40px; /* Espace pour la loupe */
+                transition: box-shadow 0.3s ease;
+        
+                &:focus {
+                    box-shadow: 0px 0px 8px rgba(0, 116, 199, 0.5);
+                }
+            }
+        
+            button.search-button {
+                position: absolute;
+                right: 10px; /* Ajuste cette valeur pour bien placer l'icône */
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                font-size: 1.2rem;
+                color: #0074c7; /* Ajuste la couleur selon le design souhaité */
+                
+                &:hover {
+                    color: #00497c; /* Change la couleur au survol */
+                }
+            }
+        }
+        }
+}
+
+    
+
+
+/* Ordinateur */
+@media (min-width: 1024px) {
+
+    .main-content {
+        max-width: 1400px;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0px;
+        background-color: white; /* Fond blanc pour un style épuré */
+        color: white;
+        max-height: 100px;
+        .logo a {
+        display: flex;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+        }
+        .logo img {
+        width: 350px; /* Ajuste la taille du logo */
+        height: auto;
+        }
+        .burger-menu {
+            display: none;
+        }
+        .nav-menu {
+        display: flex;
+        gap: 15px;
+        opacity: 1; // Assurez-vous que l'opacité est bien à 1
+        }
+        .nav-button {
+            background-color: white; // Bleu foncé similaire au site de la région
+            color: #00497c;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            margin-bottom: -50px;
+          
+            &:hover {
+                text-decoration: underline;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Ombre légère
+            }
+          
+            &:focus {
+              outline: none;
+            }
+          }
+          .search-form {
+            display: flex;
+            align-items: center;
+            position: relative;
+            
+            input.search-input {
+                padding: 8px 15px;
+                border: 1px solid #ccc;
+                border-radius: 20px;
+                outline: none;
+                font-size: 1rem;
+                width: 100%; /* Pour occuper toute la largeur disponible */
+                padding-right: 40px; /* Espace pour la loupe */
+                transition: box-shadow 0.3s ease;
+        
+                &:focus {
+                    box-shadow: 0px 0px 8px rgba(0, 116, 199, 0.5);
+                }
+            }
+        
+            button.search-button {
+                position: absolute;
+                right: 10px; /* Ajuste cette valeur pour bien placer l'icône */
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                font-size: 1.2rem;
+                color: #0074c7; /* Ajuste la couleur selon le design souhaité */
+                
+                &:hover {
+                    color: #00497c; /* Change la couleur au survol */
+                }
+            }
+        }
+        }
+
+    .artisan-cards {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+    .how-to {
+        min-width: 1400px;
+        margin: 0 25%; /* Grandes marges latérales pour centrer */
+        h2 {
+            margin-top: 40px;
+            font-size: 2.5rem;
+            
+            
+        }
+    }
+
+    .artisan-cards {
+        gap: 20px;
+    }
+
+    .arti {
+        padding-top: 40px;
+        padding-bottom: 20px;
+        margin: 0 300px; /* Grandes marges latérales pour centrer */
+    }
+}
+
+
+
+.artisans-du-mois .artisan-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Autres styles */
+.accent {
+    color: #82b864;
+}
+
+
+
+.error {
+    color: #cd2c2e;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+
+
+footer {
+    background-color: #0074c7;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        li {
+            margin: 0 10px;
+        }
+    }
+}
