@@ -27,14 +27,32 @@ function ArtisanDetail() {
     setErrors(validationErrors);
 
     if (Object.keys(validationErrors).length === 0) {
-      // Simuler un envoi asynchrone
-      setTimeout(() => {
-        alert("Message envoyé avec succès !");
-        setIsSubmitted(true);
-        setFormData({ name: '', subject: '', message: '' });
-      }, 1000);
+        // Vérifiez les données avant l'envoi
+        console.log('Données envoyées :', formData);
+
+        // Simuler un envoi asynchrone
+        fetch('http://localhost:5000/send-email', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        })
+            .then((response) => {
+                if (response.ok) {
+                    alert('Message envoyé avec succès !');
+                    setIsSubmitted(true);
+                    setFormData({ name: '', subject: '', message: '' });
+                } else {
+                    alert('Erreur lors de l\'envoi de l\'email.');
+                }
+            })
+            .catch((error) => {
+                console.error('Erreur:', error);
+                alert('Erreur lors de l\'envoi de l\'email.');
+            });
     }
-  };
+};
 
   return (
     <div className="main-content">
